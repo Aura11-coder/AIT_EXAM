@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AIT EXAM 2026 – Register Now | Aura Institute & Technology</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet"/>
+<style>
+:root{--cr:#8B1A2B;--cd:#5C0F1C;--cl:#B5293E;--gold:#C9922A;--gl:#F0BC5A;--ink:#1A1A2E;--sl:#374151;--bg:#F8F9FC;--wh:#FFFFFF;--bd:#E5E7EB;--ok:#059669;--r:12px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+@keyframes popIn{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes glow{from{box-shadow:0 0 0 rgba(240,188,90,0)}to{box-shadow:0 0 20px rgba(240,188,90,.3)}}
+
+/* ANNOUNCE */
+.abar{background:linear-gradient(90deg,var(--cd),var(--cr),var(--cd));color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;background:var(--gl);border-radius:50%;margin-right:6px;animation:pulse 1.6s infinite}
+
+/* HEADER */
+header{background:#fff;border-bottom:1px solid var(--bd);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.hbrand{display:flex;align-items:center;gap:10px}
+.hlogo{width:42px;height:42px;object-fit:contain}
+.hname{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--cd);line-height:1.2}
+.hname small{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:var(--sl)}
+.hcta{background:var(--cr);color:#fff;border:none;cursor:pointer;padding:10px 18px;border-radius:8px;font-size:13px;font-weight:700;transition:.2s}
+.hcta:hover{background:var(--cd)}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#fff 0%,#FBF4F5 40%,#F5E8EA 100%);padding:56px 20px 48px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:'2026';position:absolute;bottom:-30px;right:-10px;font-family:'Playfair Display',serif;font-size:160px;font-weight:900;color:rgba(139,26,43,.05);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(139,26,43,.08);border:1px solid rgba(139,26,43,.15);color:var(--cr);font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+.hlogo2{width:88px;margin:0 auto 16px;filter:drop-shadow(0 4px 12px rgba(139,26,43,.2))}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,9vw,70px);font-weight:900;color:var(--cd);letter-spacing:-1px;line-height:1.05;margin-bottom:10px}
+.hero-sub{font-size:15px;color:var(--sl);margin-bottom:24px;font-weight:500}
+.pcard{display:inline-block;background:#fff;border:2px solid var(--cr);border-radius:20px;padding:22px 36px;margin-bottom:26px;box-shadow:0 4px 16px rgba(0,0,0,.12);position:relative}
+.pbadge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:11px;font-weight:700;padding:3px 14px;border-radius:100px;white-space:nowrap}
+.plabel{font-size:12px;font-weight:600;color:var(--sl);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.pamount{font-family:'JetBrains Mono',monospace;font-size:clamp(50px,14vw,78px);font-weight:600;color:var(--cd);line-height:1}
+.pbreak{font-size:12px;color:var(--sl);margin-top:5px}
+.hdesc{max-width:460px;margin:0 auto 28px;font-size:15px;color:var(--sl);line-height:1.7}
+.btnpay{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--cr),var(--cd));color:#fff;font-size:17px;font-weight:700;padding:17px 36px;border-radius:12px;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(139,26,43,.35);transition:.2s;text-decoration:none}
+.btnpay:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(139,26,43,.45)}
+.uchip{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13px;font-weight:600;color:var(--cr)}
+
+/* TRUST BAR */
+.tbar{background:var(--cd);padding:16px 20px}
+.tinner{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0}
+.titem{display:flex;align-items:center;gap:7px;color:#fff;font-size:13px;font-weight:600;padding:6px 16px;border-right:1px solid rgba(255,255,255,.2);white-space:nowrap}
+.titem:last-child{border-right:none}
+.ck{color:var(--gl)}
+
+/* SECTIONS */
+section{padding:56px 20px}
+.container{max-width:960px;margin:0 auto}
+.slabel{text-align:center;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,36px);font-weight:700;text-align:center;color:var(--ink);margin-bottom:6px;line-height:1.15}
+.ssub{text-align:center;font-size:15px;color:var(--sl);max-width:480px;margin:0 auto 36px}
+.div{width:48px;height:3px;background:var(--gold);border-radius:2px;margin:12px auto 36px}
+
+/* WHY CARDS */
+.why{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(256px,1fr));gap:18px}
+.card{background:#fff;border-radius:var(--r);padding:26px 20px;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid var(--bd);border-top:3px solid var(--cr);transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.ci{font-size:32px;margin-bottom:12px}
+.ct{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.cd2{font-size:13px;color:var(--sl);line-height:1.6}
+
+/* COUNTDOWN */
+.cdsec{background:linear-gradient(135deg,var(--cd),#3D0A13);color:#fff;text-align:center}
+.cdsec .stitle{color:#fff}
+.cdsec .ssub{color:rgba(255,255,255,.7)}
+.cdgrid{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.cbox{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:20px 18px 14px;min-width:86px}
+.cnum{font-family:'JetBrains Mono',monospace;font-size:44px;font-weight:600;color:var(--gl);line-height:1;display:block}
+.clbl{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:5px}
+.curg{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--gl);animation:glow 2s ease-in-out infinite alternate}
+
+/* PAYMENT SECTION */
+.psec{background:var(--bg)}
+.pcard2{max-width:440px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.14);overflow:hidden;border:1px solid var(--bd)}
+.phead{background:linear-gradient(135deg,var(--cd),var(--cr));color:#fff;padding:20px 26px;text-align:center}
+.phead h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:700}
+.phead p{font-size:13px;opacity:.8;margin-top:3px}
+.pbody{padding:26px}
+.frow{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bd);font-size:15px}
+.frow:last-of-type{border-bottom:none}
+.fl{color:var(--sl);font-weight:500}
+.fv{font-weight:700;color:var(--ink)}
+.ftotal{background:rgba(139,26,43,.05);border:2px solid var(--cr);border-radius:10px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;margin:14px 0 22px}
+.ftl{font-size:14px;font-weight:700;color:var(--cd)}
+.ftv{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:600;color:var(--cd)}
+.btnmain{width:100%;background:linear-gradient(135deg,var(--cr),var(--cd));color:#fff;border:none;cursor:pointer;padding:17px;border-radius:10px;font-size:17px;font-weight:700;box-shadow:0 6px 20px rgba(139,26,43,.3);transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btnmain:hover{transform:translateY(-2px)}
+.snote{text-align:center;margin-top:12px;font-size:12px;color:var(--sl)}
+
+/* LIMITED SEATS */
+.wbox{max-width:600px;margin:0 auto;border:2px solid var(--cr);border-radius:var(--r);background:#FFF5F6;padding:30px 24px;text-align:center}
+.witem{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:var(--cd);padding:8px 0;border-bottom:1px solid rgba(139,26,43,.1);text-align:left}
+.witem:last-child{border-bottom:none}
+
+/* FOOTER */
+footer{background:var(--ink);color:#fff;padding:36px 20px 100px;text-align:center}
+.flogo{width:56px;margin:0 auto 12px;opacity:.9}
+.fbrand{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--gl);margin-bottom:3px}
+.fsub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:18px}
+.fcons{display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:center;margin-bottom:16px}
+.fcon{font-size:13px;color:rgba(255,255,255,.75)}
+.fadr{font-size:12px;color:rgba(255,255,255,.45)}
+.fdiv{width:60px;height:1px;background:rgba(255,255,255,.15);margin:14px auto}
+.fcopy{font-size:11px;color:rgba(255,255,255,.3)}
+
+/* STICKY */
+.sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;padding:11px 14px;background:#fff;border-top:1px solid var(--bd);box-shadow:0 -4px 20px rgba(0,0,0,.12)}
+.sticky button{width:100%;background:linear-gradient(135deg,var(--cr),var(--cd));color:#fff;border:none;cursor:pointer;padding:15px;border-radius:10px;font-size:16px;font-weight:700}
+@media(max-width:640px){.sticky{display:block}.hcta{display:none}.cnum{font-size:34px}.cbox{min-width:68px;padding:14px 10px 10px}}
+
+/* MODAL */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:500;justify-content:center;align-items:flex-start;padding:16px;overflow-y:auto}
+.overlay.open{display:flex}
+.modal{background:#fff;border-radius:18px;width:100%;max-width:420px;margin:auto;animation:popIn .25s ease;overflow:hidden}
+
+/* urgency bar */
+.mbar{background:linear-gradient(90deg,var(--cd),var(--gold));padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.mseat{background:#FFF5F6;border-bottom:1px solid #FFD6DA;padding:7px 16px;display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--cr)}
+.mbody{padding:20px}
+
+/* form inputs */
+.finp{width:100%;padding:11px 13px;border:1.5px solid var(--bd);border-radius:8px;font-size:14px;outline:none;font-family:'Inter',sans-serif;transition:border-color .2s}
+.finp:focus{border-color:var(--cr)}
+.flbl{font-size:12px;font-weight:700;color:var(--sl);display:block;margin-bottom:4px}
+.fgrp{margin-bottom:11px}
+.cat-btn{flex:1;min-width:76px;padding:9px 5px;border:1.5px solid var(--bd);border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;background:#fff;color:var(--sl);transition:.15s}
+.cat-btn.sel{background:var(--cr);color:#fff;border-color:var(--cr)}
+.errmsg{display:none;background:#FEF2F2;border:1px solid #FECACA;border-radius:7px;padding:9px 12px;font-size:13px;color:#DC2626;font-weight:700;margin-bottom:10px}
+.btnyes{width:100%;background:var(--ok);color:#fff;border:none;cursor:pointer;padding:14px;border-radius:10px;font-size:16px;font-weight:700;margin-bottom:9px;transition:.2s}
+.btnyes:hover{background:#047857}
+.btnout{width:100%;background:none;border:2px solid var(--bd);color:var(--sl);cursor:pointer;padding:11px;border-radius:10px;font-size:13px;font-weight:600}
+.btncr{width:100%;background:linear-gradient(135deg,var(--cr),var(--cd));color:#fff;border:none;cursor:pointer;padding:14px;border-radius:10px;font-size:16px;font-weight:700;margin-bottom:8px;transition:.2s}
+.btncr:hover{transform:translateY(-1px)}
+.btnwa{width:100%;background:#25D366;color:#fff;border:none;cursor:pointer;padding:14px;border-radius:10px;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity .5s,transform .5s}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+<div class="abar"><span class="dot"></span>AIT EXAM 2026 — Registrations Open · Limited Seats · Closing July 5</div>
+
+<!-- HEADER -->
+<header>
+  <div class="hbrand">
+    <img src="/mnt/user-data/uploads/WhatsApp_Image_2025-08-23_at_6_42_36_PM__1_-removebg-preview-removebg-preview.png" alt="Logo" class="hlogo"/>
+    <div class="hname">AURA<br><small>Institute & Technology</small></div>
+  </div>
+  <button class="hcta" onclick="openModal()">💰 Pay ₹117 Now</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">🎓 Aura Institute & Technology Presents</div>
+  <img src="/mnt/user-data/uploads/WhatsApp_Image_2025-08-23_at_6_42_36_PM__1_-removebg-preview-removebg-preview.png" alt="AIT Logo" class="hlogo2"/>
+  <h1>AIT EXAM 2026</h1>
+  <p class="hero-sub">India's Premier Student Assessment & Career Gateway</p>
+  <div class="pcard">
+    <div class="pbadge">✦ Total Payable Amount ✦</div>
+    <div class="plabel">One-Time Registration</div>
+    <div class="pamount">₹117</div>
+    <div class="pbreak">₹99 Base Fee + ₹18 GST (18%)</div>
+  </div>
+  <p class="hdesc">Register for AIT EXAM 2026 and unlock scholarship opportunities, internships, certification programs, and career growth benefits.</p>
+  <button class="btnpay" onclick="openModal()">💰 Pay ₹117 & Book Your Seat</button>
+  <br><span class="uchip">⚠ Limited Seats Available · First Come First Serve</span>
+</section>
+
+<!-- TRUST BAR -->
+<div class="tbar">
+  <div class="tinner">
+    <div class="titem"><span class="ck">✓</span> Online & Offline Exam</div>
+    <div class="titem"><span class="ck">✓</span> Certificate Included</div>
+    <div class="titem"><span class="ck">✓</span> Scholarship Opportunities</div>
+    <div class="titem"><span class="ck">✓</span> Internship Opportunities</div>
+    <div class="titem"><span class="ck">✓</span> Limited Seats</div>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="why">
+  <div class="container">
+    <p class="slabel fade-up">Why Register</p>
+    <h2 class="stitle fade-up">Benefits That Shape Your Future</h2>
+    <div class="div fade-up"></div>
+    <div class="grid">
+      <div class="card fade-up"><div class="ci">🏆</div><div class="ct">Scholarship Opportunities</div><div class="cd2">Top scorers eligible for merit-based scholarships that reduce course fees significantly.</div></div>
+      <div class="card fade-up"><div class="ci">🎓</div><div class="ct">Certification Programs</div><div class="cd2">Earn a nationally recognised AIT certificate that adds real credibility to your profile.</div></div>
+      <div class="card fade-up"><div class="ci">💼</div><div class="ct">Internship Opportunities</div><div class="cd2">Access curated internship tie-ups with industry partners for hands-on experience.</div></div>
+      <div class="card fade-up"><div class="ci">📈</div><div class="ct">Career Guidance</div><div class="cd2">One-on-one sessions with career experts to map out your personalised career path.</div></div>
+      <div class="card fade-up"><div class="ci">🧑‍🏫</div><div class="ct">Industry Trainers</div><div class="cd2">Learn from practitioners with years of real-world corporate and technical experience.</div></div>
+      <div class="card fade-up"><div class="ci">🚀</div><div class="ct">Placement Support</div><div class="cd2">Dedicated placement cell to help you land your first or next big role with confidence.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="cdsec">
+  <div class="container">
+    <p class="slabel" style="color:var(--gl)">Registration Deadline</p>
+    <h2 class="stitle">Registration Closing Soon</h2>
+    <div class="div" style="background:var(--gl);margin-bottom:32px"></div>
+    <div class="cdgrid">
+      <div class="cbox"><span class="cnum" id="cd-d">00</span><div class="clbl">Days</div></div>
+      <div class="cbox"><span class="cnum" id="cd-h">00</span><div class="clbl">Hours</div></div>
+      <div class="cbox"><span class="cnum" id="cd-m">00</span><div class="clbl">Minutes</div></div>
+      <div class="cbox"><span class="cnum" id="cd-s">00</span><div class="clbl">Seconds</div></div>
+    </div>
+    <div class="curg">🔴 &nbsp;Registrations close July 5, 2026</div>
+  </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="psec" id="payment">
+  <div class="container">
+    <p class="slabel fade-up">Secure Registration</p>
+    <h2 class="stitle fade-up">Complete Your Payment</h2>
+    <p class="ssub fade-up">One-time fee · Instant confirmation</p>
+    <div class="div fade-up"></div>
+    <div class="pcard2 fade-up">
+      <div class="phead"><h3>AIT EXAM 2026</h3><p>Registration Fee Summary</p></div>
+      <div class="pbody">
+        <div class="frow"><span class="fl">Registration Fee</span><span class="fv">₹99</span></div>
+        <div class="frow"><span class="fl">GST (18%)</span><span class="fv">₹18</span></div>
+        <div class="ftotal"><span class="ftl">Total Payable</span><span class="ftv">₹117</span></div>
+        <button class="btnmain" onclick="openModal()">💰 Pay ₹117 & Book Your Seat</button>
+        <p class="snote">🔒 Secure UPI Payment · Instant Confirmation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIMITED SEATS -->
+<section style="padding:36px 20px">
+  <div class="container">
+    <div class="wbox fade-up">
+      <div style="font-size:34px;margin-bottom:12px">⚠️</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:21px;color:var(--cd);margin-bottom:14px">Act Now — Seats Are Filling Fast</h3>
+      <div class="witem">⚠ Limited Seats Available</div>
+      <div class="witem">⚠ Registration Closing Soon</div>
+      <div class="witem">⚠ First Come First Serve Basis</div>
+      <br>
+      <button class="btnpay" onclick="openModal()" style="font-size:15px;padding:13px 26px">💰 Pay ₹117 & Secure My Seat</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="/mnt/user-data/uploads/WhatsApp_Image_2025-08-23_at_6_42_36_PM__1_-removebg-preview-removebg-preview.png" alt="Logo" class="flogo"/>
+  <div class="fbrand">AIT EXAM 2026</div>
+  <div class="fsub">Aura Institute & Technology</div>
+  <div class="fdiv"></div>
+  <div class="fcons">
+    <span class="fcon">📞 73390 44193</span>
+    <span class="fcon">💬 WhatsApp: 9087751113</span>
+    <span class="fcon">✉ aurainstitutetechnology@gmail.com</span>
+  </div>
+  <div class="fadr">Anna Nagar West Extension, Chennai – 600101</div>
+  <div class="fdiv"></div>
+  <div class="fcopy">© 2026 Aura Institute & Technology. All Rights Reserved.</div>
+</footer>
+
+<!-- STICKY -->
+<div class="sticky"><button onclick="openModal()">💰 Pay ₹117 Now — Book My Seat</button></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     MODAL
+═══════════════════════════════════════════════════════ -->
+<div class="overlay" id="overlay" onclick="overlayClick(event)">
+<div class="modal" id="modal">
+
+  <!-- TOP: urgency bar -->
+  <div class="mbar" id="mbar">
+    <span style="color:#fff;font-size:13px;font-weight:700">⚡ உங்க Seat Reserved!</span>
+    <div style="display:flex;align-items:center;gap:7px">
+      <span style="color:#fff;font-size:12px;font-weight:600">⏱</span>
+      <span id="ptimer" style="background:rgba(0,0,0,.3);color:#FDE68A;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;padding:2px 10px;border-radius:6px">5:00</span>
+    </div>
+  </div>
+
+  <!-- TOP: seat bar -->
+  <div class="mseat" id="mseat">
+    <span style="width:7px;height:7px;background:#EF4444;border-radius:50%;display:inline-block;animation:pulse 1s infinite;flex-shrink:0"></span>
+    🔴 Only <span id="sleft" style="font-weight:900;margin:0 3px">7</span> seats remaining — Others viewing right now!
+  </div>
+
+  <div class="mbody">
+
+    <!-- ── SCREEN 1: PAY ── -->
+    <div id="s1">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <h3 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--ink)">💳 Pay ₹117 — Book Seat</h3>
+        <button onclick="closeModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#bbb;padding:0">✕</button>
+      </div>
+      <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 13px;margin-bottom:14px;font-size:13px;color:#166534;font-weight:600">
+        🔒 Secure · ₹99 + ₹18 GST = <strong>₹117</strong>
+      </div>
+      <p style="font-size:12px;font-weight:700;color:var(--sl);margin-bottom:8px;text-transform:uppercase;letter-spacing:.7px">📱 Mobile — Tap to Open UPI App</p>
+      <a href="upi://pay?pa=hashimmunawar3@okhdfcbank&pn=AIT%20EXAM&am=117&cu=INR" onclick="upiClicked()" style="display:block;background:linear-gradient(135deg,#6B21A8,#4F46E5);color:#fff;font-size:16px;font-weight:700;padding:15px;border-radius:10px;text-decoration:none;text-align:center;margin-bottom:5px">
+        📲 Pay ₹117 via GPay / PhonePe / Paytm
+      </a>
+      <p style="text-align:center;font-size:11px;color:#aaa;margin-bottom:14px">உங்க default UPI app திறக்கும்</p>
+      <div style="text-align:center;position:relative;margin-bottom:12px">
+        <hr style="border:none;border-top:1px solid #eee"/>
+        <span style="background:#fff;padding:0 10px;position:absolute;top:-9px;left:50%;transform:translateX(-50%);font-size:12px;color:#bbb;white-space:nowrap">— OR Desktop-ல் Scan QR —</span>
+      </div>
+      <div style="text-align:center;margin-bottom:14px">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=upi%3A%2F%2Fpay%3Fpa%3Dhashimmunawar3%40okhdfcbank%26pn%3DAIT%2520EXAM%26am%3D117%26cu%3DINR" alt="QR" style="width:156px;height:156px;border-radius:10px;border:2px solid #eee;padding:6px"/>
+        <p style="font-size:11px;color:#888;margin-top:5px">GPay / PhonePe / Paytm · ₹117</p>
+      </div>
+      <div style="background:#FFFBEB;border:1px solid #FCD34D;border-radius:7px;padding:9px 12px;font-size:12px;color:#92600A;margin-bottom:14px">
+        ⚠️ Pay பண்ணிட்டு <strong>UPI Transaction ID</strong> save பண்ணுங்க
+      </div>
+      <button class="btncr" onclick="goS2()">✅ Payment பண்ணிட்டேன் — Next →</button>
+    </div>
+
+    <!-- ── SCREEN 2: VERIFY TXN ── -->
+    <div id="s2" style="display:none">
+      <div style="text-align:center;margin-bottom:14px">
+        <div style="font-size:40px">🔐</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:19px;color:var(--ink);margin:8px 0 5px">Payment Verify பண்ணுங்க</h3>
+        <p style="font-size:13px;color:var(--sl);line-height:1.6">UPI Transaction ID போடுங்க. இல்லாம proceed ஆகாது.</p>
+      </div>
+      <div class="fgrp">
+        <label class="flbl">UPI Transaction ID *</label>
+        <input id="v-txn" class="finp" type="text" placeholder="Eg: 426847291034" style="font-family:'JetBrains Mono',monospace;background:#FFFBEB;border-color:#FCD34D;font-size:15px" oninput="document.getElementById('v-err').style.display='none'"/>
+        <p style="font-size:11px;color:#92600A;margin-top:4px">📱 UPI App → Transactions → ID copy பண்ணுங்க</p>
+      </div>
+      <div id="v-err" class="errmsg"></div>
+      <button class="btnyes" onclick="verifyTxn()">✅ Verify & Fill Registration →</button>
+      <button class="btnout" onclick="goS1()">🔄 மீண்டும் Pay பண்றேன்</button>
+    </div>
+
+    <!-- ── SCREEN 3: REGISTRATION FORM ── -->
+    <div id="s3" style="display:none">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+        <span style="font-size:20px">📋</span>
+        <div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);margin:0">Registration Details</h3>
+          <p style="font-size:11px;color:var(--sl)">Payment verified ✅ · Details fill பண்ணுங்க</p>
+        </div>
+      </div>
+      <div id="reg-form">
+        <div class="fgrp">
+          <label class="flbl">Full Name *</label>
+          <input id="f-name" class="finp" type="text" placeholder="உங்க பேரு"/>
+        </div>
+        <div class="fgrp">
+          <label class="flbl">Mobile Number *</label>
+          <input id="f-mob" class="finp" type="tel" placeholder="10-digit number" maxlength="10"/>
+        </div>
+        <div class="fgrp">
+          <label class="flbl">Email Address *</label>
+          <input id="f-email" class="finp" type="email" placeholder="yourname@email.com"/>
+        </div>
+        <div class="fgrp">
+          <label class="flbl">நீங்க யாரு? *</label>
+          <div style="display:flex;gap:6px">
+            <button type="button" class="cat-btn" onclick="setCat(this,'School Student')">🏫 School</button>
+            <button type="button" class="cat-btn" onclick="setCat(this,'College Student')">🎓 College</button>
+            <button type="button" class="cat-btn" onclick="setCat(this,'Working')">💼 Working</button>
+          </div>
+          <input type="hidden" id="f-cat"/>
+        </div>
+        <div class="fgrp">
+          <label class="flbl">Course Interested *</label>
+          <select id="f-course" class="finp" style="background:#fff">
+            <option value="">-- Select Course --</option>
+            <option>Web Development</option>
+            <option>Data Science & AI</option>
+            <option>Digital Marketing</option>
+            <option>Graphic Design</option>
+            <option>Cyber Security</option>
+            <option>Python Programming</option>
+            <option>Full Stack Development</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fgrp">
+          <label class="flbl">UPI Transaction ID *</label>
+          <input id="f-txn" class="finp" type="text" style="font-family:'JetBrains Mono',monospace;background:#F0FDF4;border-color:#BBF7D0" readonly/>
+          <p style="font-size:11px;color:var(--ok);margin-top:3px">✅ Verified</p>
+        </div>
+        <div id="f-err" class="errmsg"></div>
+        <button class="btncr" id="sub-btn" onclick="submitForm()" style="font-size:16px">
+          ✅ Submit & Join WhatsApp Group →
+        </button>
+      </div>
+      <!-- success -->
+      <div id="reg-ok" style="display:none;text-align:center;padding:8px 0">
+        <div style="font-size:50px;margin-bottom:10px">🎉</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:var(--ok);margin-bottom:6px">Registration Done!</h3>
+        <p style="font-size:13px;color:var(--sl);margin-bottom:16px;line-height:1.6">Welcome to AIT EXAM 2026! இப்போ WhatsApp Group join பண்ணுங்க 👇</p>
+        <button class="btnwa" onclick="joinWA()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.054 23.25a.75.75 0 0 0 .916.916l5.451-1.492A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.727 9.727 0 0 1-4.953-1.356l-.355-.211-3.676 1.006 1.022-3.584-.232-.368A9.712 9.712 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          WhatsApp Group Join பண்ணு 🚀
+        </button>
+      </div>
+    </div>
+
+    <!-- ── SCREEN 4: TIME EXPIRED ── -->
+    <div id="s4" style="display:none;text-align:center">
+      <div style="font-size:50px;margin-bottom:10px">⏰</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:#EF4444;margin-bottom:8px">Time Out!</h3>
+      <p style="font-size:13px;color:var(--sl);margin-bottom:18px;line-height:1.6">Reserve பண்ணிய seat போயிடுச்சு. இப்பவே மீண்டும் try பண்ணுங்க!</p>
+      <button class="btncr" onclick="restartAll()">🔄 மீண்டும் Try பண்ணு</button>
+    </div>
+
+  </div><!-- /mbody -->
+</div><!-- /modal -->
+</div><!-- /overlay -->
+
+<script>
+/* ── COUNTDOWN (page) ──────────────────── */
+const TARGET = new Date('2026-07-05T23:59:59').getTime();
+function tick(){
+  const d = TARGET - Date.now();
+  if(d<=0){['cd-d','cd-h','cd-m','cd-s'].forEach(i=>document.getElementById(i).textContent='00');return}
+  document.getElementById('cd-d').textContent = String(Math.floor(d/86400000)).padStart(2,'0');
+  document.getElementById('cd-h').textContent = String(Math.floor(d%86400000/3600000)).padStart(2,'0');
+  document.getElementById('cd-m').textContent = String(Math.floor(d%3600000/60000)).padStart(2,'0');
+  document.getElementById('cd-s').textContent = String(Math.floor(d%60000/1000)).padStart(2,'0');
+}
+tick(); setInterval(tick,1000);
+
+/* ── SEAT COUNTER ──────────────────────── */
+const seats=[7,6,5,7,4,6,3,5,4,6];
+let si=0;
+setInterval(()=>{ si=(si+1)%seats.length; const el=document.getElementById('sleft'); if(el)el.textContent=seats[si]; },7000);
+
+/* ── 5-MIN PAYMENT TIMER ───────────────── */
+let timerInt=null, secs=300;
+function startTimer(){
+  clearInterval(timerInt);
+  timerInt=setInterval(()=>{
+    secs--;
+    const m=Math.floor(secs/60), s=secs%60;
+    const el=document.getElementById('ptimer');
+    if(el){ el.textContent=m+':'+(s<10?'0':'')+s; el.style.color=secs<60?'#FF4444':'#FDE68A'; }
+    if(secs<=0){ clearInterval(timerInt); show('s4'); }
+  },1000);
+}
+function updateTimer(){ const el=document.getElementById('ptimer'); if(el)el.textContent='5:00'; }
+
+/* ── MODAL OPEN/CLOSE ──────────────────── */
+function openModal(){
+  secs=300; updateTimer();
+  show('s1');
+  document.getElementById('mbar').style.background='linear-gradient(90deg,#5C0F1C,#C9922A)';
+  document.getElementById('mseat').style.display='flex';
+  document.getElementById('overlay').classList.add('open');
+  startTimer();
+}
+function closeModal(){ clearInterval(timerInt); document.getElementById('overlay').classList.remove('open'); }
+function overlayClick(e){ if(e.target===document.getElementById('overlay')) closeModal(); }
+
+/* ── SCREEN SWITCHER ───────────────────── */
+function show(id){
+  ['s1','s2','s3','s4'].forEach(s=>{ const el=document.getElementById(s); if(el)el.style.display='none'; });
+  const t=document.getElementById(id); if(t)t.style.display='block';
+}
+function goS1(){ show('s1'); }
+function goS2(){ show('s2'); document.getElementById('v-txn').focus(); }
+
+/* ── UPI CLICK ─────────────────────────── */
+function upiClicked(){
+  // After returning from UPI app, show verify screen
+  setTimeout(()=>{ if(document.getElementById('overlay').classList.contains('open')) goS2(); },3000);
+}
+
+/* ── VERIFY TXN ────────────────────────── */
+let savedTxn='';
+function verifyTxn(){
+  const txn=document.getElementById('v-txn').value.trim();
+  const err=document.getElementById('v-err');
+  if(!txn){ showErr2('Transaction ID போடுங்க ⚠️'); return; }
+  if(!/^[A-Za-z0-9]{6,}$/.test(txn)){ showErr2('Valid Transaction ID போடுங்க (min 6 characters)'); return; }
+  const fakes=['123456','000000','111111','test','fake','demo','abcdef','123456789'];
+  if(fakes.indexOf(txn.toLowerCase())!==-1){ showErr2('இந்த ID valid இல்லை ❌ — UPI app-ல் இருந்து real ID போடுங்க'); return; }
+  savedTxn=txn;
+  err.style.display='none';
+  // Pre-fill in reg form
+  const ft=document.getElementById('f-txn'); if(ft)ft.value=txn;
+  show('s3');
+}
+function showErr2(m){ const e=document.getElementById('v-err'); e.textContent=m; e.style.display='block'; }
+
+/* ── CATEGORY ──────────────────────────── */
+function setCat(btn,val){
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+  document.getElementById('f-cat').value=val;
+}
+
+/* ── SUBMIT FORM ───────────────────────── */
+async function submitForm(){
+  const name  = document.getElementById('f-name').value.trim();
+  const mob   = document.getElementById('f-mob').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const cat   = document.getElementById('f-cat').value;
+  const course= document.getElementById('f-course').value;
+  const txn   = savedTxn;
+  const err   = document.getElementById('f-err');
+
+  if(!name)  { showFErr('பேரு எழுதுங்க ✍️'); return; }
+  if(!/^[0-9]{10}$/.test(mob)){ showFErr('10 digit mobile number போடுங்க 📱'); return; }
+  if(!email||!email.includes('@')){ showFErr('சரியான Email போடுங்க 📧'); return; }
+  if(!cat)   { showFErr('நீங்க யாரு என்று select பண்ணுங்க 👆'); return; }
+  if(!course){ showFErr('Course select பண்ணுங்க 📚'); return; }
+
+  err.style.display='none';
+  const btn=document.getElementById('sub-btn');
+  btn.textContent='⏳ Sending...'; btn.disabled=true; btn.style.opacity='.7';
+
+  await new Promise(r=>setTimeout(r,700));
+
+  // Send WhatsApp message to admin
+  const now=new Date();
+  const ds=now.toLocaleDateString('en-IN')+' '+now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+  const msg=[
+    '🎓 *AIT EXAM 2026 — New Registration*',
+    '━━━━━━━━━━━━━━━━━━',
+    '👤 *Name:* '+name,
+    '📱 *Mobile:* '+mob,
+    '📧 *Email:* '+email,
+    '🏷️ *Category:* '+cat,
+    '📚 *Course:* '+course,
+    '💳 *UPI Txn ID:* '+txn,
+    '🕐 *Time:* '+ds,
+    '━━━━━━━━━━━━━━━━━━',
+    '✅ Payment: ₹117 Paid'
+  ].join('\n');
+
+  window.open('https://wa.me/919087751113?text='+encodeURIComponent(msg),'_blank');
+
+  document.getElementById('reg-form').style.display='none';
+  document.getElementById('reg-ok').style.display='block';
+  document.getElementById('mbar').style.background='linear-gradient(90deg,#059669,#10B981)';
+  document.getElementById('mseat').style.display='none';
+  clearInterval(timerInt);
+
+  setTimeout(()=>joinWA(),2500);
+}
+function showFErr(m){ const e=document.getElementById('f-err'); e.textContent=m; e.style.display='block'; }
+
+/* ── WHATSAPP GROUP ─────────────────────── */
+function joinWA(){ window.open('https://chat.whatsapp.com/CU0idPzkVLpAV8YCTdABZa','_blank'); }
+
+/* ── RESTART ────────────────────────────── */
+function restartAll(){
+  secs=300; updateTimer();
+  document.getElementById('mbar').style.background='linear-gradient(90deg,#5C0F1C,#C9922A)';
+  document.getElementById('mseat').style.display='flex';
+  show('s1'); startTimer();
+}
+
+/* ── SCROLL FADE ────────────────────────── */
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }),{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
